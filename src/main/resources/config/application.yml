@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: merchant
+  datasource:
+    url: jdbc:mysql://192.168.0.190:3306/merchant?characterEncoding=utf8&characterSetResults=utf8&autoReconnect=true&failOverReadOnly=false
+    username: felix
+    password: 123456
