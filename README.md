@@ -4,13 +4,13 @@
 譬如，在某平台的商家系统中，存在商家、品牌、商品等业务资源。它们之间的关系为：一个商家可以拥有多个品牌，一个品牌下可以拥有多个商品。
 
 
-![text](https://img2018.cnblogs.com/blog/1384701/201909/1384701-20190907194840529-1782095749.png)
+![text](https://github.com/Felix0525/assets/blob/master/20190907-0001.png?raw=true)
 
 
 一个商家用户可以拥有多个账户，每个账户拥有不同级别的权限。
 例如，小王负责商家A下的所有资源的运营工作，小张负责品牌A和品牌A下所有商品的运营工作。而小李负责品牌B
 
-![](https://img2018.cnblogs.com/blog/1384701/201909/1384701-20190907201733392-883952038.png)
+![](https://github.com/Felix0525/assets/blob/master/20190907-0002.png?raw=true)
 
 
 Shiro本身提供了RequiresAuthentication、RequiresPermissions和RequiresRoles等注解用于实现静态权限认证，
@@ -313,38 +313,35 @@ public class PermitAdvisor extends StaticMethodMatcherPointcutAdvisor {
 
 7.1、按照上面描述的业务场景，准备3个用户数据
 
-![](https://img2018.cnblogs.com/blog/1384701/201909/1384701-20190907210623861-119508830.png)
+![](https://github.com/Felix0525/assets/blob/master/20190907-00010.png?raw=true)
 
 7.2、使用小王登录后测试
 
-![](https://img2018.cnblogs.com/blog/1384701/201909/1384701-20190907211039363-548124416.png)
+![](https://github.com/Felix0525/assets/blob/master/20190907-0003.png?raw=true)
 
 
 7.2.1、获取商家信息（拥有权限）
 
-![](https://img2018.cnblogs.com/blog/1384701/201909/1384701-20190907211158369-2672872.png)
+![](https://github.com/Felix0525/assets/blob/master/20190907-0004.png?raw=true)
 
 7.2.2、获取商品信息（拥有权限）
 
-![](https://img2018.cnblogs.com/blog/1384701/201909/1384701-20190907211300285-2126261527.png)
-
+![](https://github.com/Felix0525/assets/blob/master/20190907-0005.png?raw=true)
 
 7.3、使用小李登录后测试
 
-![](https://img2018.cnblogs.com/blog/1384701/201909/1384701-20190907211458366-1481394315.png)
+![](https://github.com/Felix0525/assets/blob/master/20190907-0006.png?raw=true)
 
 
 7.3.1、获取商家信息（权限不足）
 
-![](https://img2018.cnblogs.com/blog/1384701/201909/1384701-20190907211651387-2109958085.png)
-
+![](https://github.com/Felix0525/assets/blob/master/20190907-0007.png?raw=true)
 7.3.2、获取商品信息（权限不足）
 
-![](https://img2018.cnblogs.com/blog/1384701/201909/1384701-20190907211802141-626750126.png)
-
+![](https://github.com/Felix0525/assets/blob/master/20190907-0008.png?raw=true)
 7.3.3、获取商品信息（拥有权限）
 
-![](https://img2018.cnblogs.com/blog/1384701/201909/1384701-20190907211910355-380643259.png)
+![](https://github.com/Felix0525/assets/blob/master/20190907-0009.png?raw=true)
 
 
 7.4、小结
